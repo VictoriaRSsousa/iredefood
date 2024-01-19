@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Header/>
-      {products.map((product)=>(<Card total={total} setItens={setItens} product={product} key={product.id}/>))}
+      {products.map((product)=>(<Card total={total} setTotal={setTotal} product={product} key={product.id}/>))}
       
       {/* SE TOTAL FOR MENOR QUE 0 NAO EXIBE O FOOTER */}
       {total>0?<Footer total={total} />:null}
